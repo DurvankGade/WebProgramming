@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <title>Snowman</title>
+  </head>
+  <body>
+    Canvas<br />
+    <canvas
+      id="abc"
+      height="400"
+      width="400"
+      style="border: 1px solid black"
+    ></canvas>
+    <script>
+      var c = document.getElementById("abc");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(150, 100, 50, 0, 2 * Math.PI);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(150, 250, 100, 0, 2 * Math.PI);
+      ctx.stroke();
+      ctx.moveTo(100, 100);
+      ctx.lineTo(100, 10);
+      ctx.stroke();
+      ctx.moveTo(100, 10);
+      ctx.lineTo(200, 10);
+      ctx.stroke();
+      ctx.moveTo(200, 10);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+      ctx.moveTo(240, 210);
+      ctx.lineTo(300, 260);
+      ctx.stroke();
+      ctx.moveTo(60, 210);
+      ctx.lineTo(5, 260);
+      ctx.stroke();
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    SVG<br />
+    <svg
+      width="400"
+      height="400"
+      style="border: 1px solid black; background-color: black"
+    >
+      <line
+        x1="150"
+        y1="200"
+        x2="120"
+        y2="250"
+        stroke="tomato"
+        stroke-width="4px"
+      ></line>
+      <line
+        x1="250"
+        y1="200"
+        x2="280"
+        y2="250"
+        stroke="tomato"
+        stroke-width="4px"
+      ></line>
+      <circle
+        cx="200"
+        cy="100"
+        r="50"
+        stroke="black"
+        stroke-width="3px"
+        fill="white"
+      ></circle>
+      <circle
+        cx="175"
+        cy="85"
+        r="5"
+        stroke="white"
+        stroke-width="1px"
+        fill="black"
+      ></circle>
+      <circle
+        cx="225"
+        cy="85"
+        r="5"
+        stroke="white"
+        stroke-width="1px"
+        fill="black"
+      ></circle>
+      <circle
+        cx="200"
+        cy="200"
+        r="50"
+        stroke="white"
+        stroke-width="3px"
+        fill="white"
+      ></circle>
+      <circle
+        cx="200"
+        cy="175"
+        r="5"
+        stroke="black"
+        stroke-width="2px"
+        fill="black"
+      ></circle>
+      <circle
+        cx="200"
+        cy="200"
+        r="5"
+        stroke="black"
+        stroke-width="2px"
+        fill="black"
+      ></circle>
+      <circle
+        cx="200"
+        cy="225"
+        r="5"
+        stroke="black"
+        stroke-width="2px"
+        fill="black"
+      ></circle>
+      <circle
+        cx="200"
+        cy="320"
+        r="70"
+        stroke="white"
+        stroke-width="3px"
+        fill="white"
+      ></circle>
+    </svg>
+  </body>
+</html
